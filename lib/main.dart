@@ -4,9 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:untitled/my_app.dart';
 
 void main() {
-  runApp(DevicePreview(
+  runApp(
+    DevicePreview(
       enabled: !kReleaseMode,
       builder: (context) {
         return const MyApp();
-      }));
+      },
+    ),
+  );
 }

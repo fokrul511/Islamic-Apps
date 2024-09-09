@@ -16,6 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   salomon_bottom_bar: ^3.3.2
   device_preview: ^1.1.0
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
