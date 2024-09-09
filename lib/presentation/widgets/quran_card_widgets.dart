@@ -16,28 +16,42 @@ class QuranCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(15.r), // Responsive radius
-        ),
-      ),
-      elevation: 3,
-      child: ListTile(
-        title: Text(
-          title,
-          style: TextStyle(
-            color: AppColors.primaryColor,
-            fontWeight: FontWeight.w600,
-            fontSize: 12.sp, // Responsive font size
+    return GestureDetector(
+      onTap: onTap,
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(15.r), // Responsive radius
           ),
         ),
-        leading: Icon(
-          iconData,
-          color: AppColors.primaryColor,
-          size: 24.sp, // Responsive icon size
+        elevation: 3,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              Icon(
+                iconData,
+                color: AppColors.primaryColor,
+                size: 25,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Expanded(
+                child: SizedBox(
+                  child: Text(
+                    title,
+                    style: const TextStyle(
+                      color: AppColors.primaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
-        onTap: onTap,
       ),
     );
   }
