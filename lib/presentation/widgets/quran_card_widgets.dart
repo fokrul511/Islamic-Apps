@@ -24,15 +24,15 @@ class QuranCard extends StatelessWidget {
             Radius.circular(15.r), // Responsive radius
           ),
         ),
-        elevation: 3,
+        elevation: 4,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
               Icon(
                 iconData,
-                color: AppColors.primaryColor,
-                size: 25,
+                color: Color(0xff063328),
+                size: 28,
               ),
               const SizedBox(
                 width: 10,
@@ -43,8 +43,8 @@ class QuranCard extends StatelessWidget {
                     title,
                     style: const TextStyle(
                       color: AppColors.primaryColor,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),

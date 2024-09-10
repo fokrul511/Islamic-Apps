@@ -22,9 +22,10 @@ class TimeAndDateWidgets extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
+
                   "12:15pm",
                   style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 36,
                       fontWeight: FontWeight.w500,
                       color: AppColors.whiteColor),
                 ),
@@ -38,7 +39,7 @@ class TimeAndDateWidgets extends StatelessWidget {
                       "Mirpur,Dhaka",
                       style: TextStyle(
                           fontSize: 16,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w400,
                           color: AppColors.whiteColor),
                     ),
                   ],
@@ -53,7 +54,7 @@ class TimeAndDateWidgets extends StatelessWidget {
                   "Sha'ban, 1444 AH",
                   style: TextStyle(
                       fontSize: 16,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                       color: AppColors.whiteColor),
                 ),
                 Row(
@@ -64,7 +65,7 @@ class TimeAndDateWidgets extends StatelessWidget {
                       "Saturday, 25 February",
                       style: TextStyle(
                           fontSize: 16,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w400,
                           color: AppColors.whiteColor),
                     ),
                   ],

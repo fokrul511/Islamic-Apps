@@ -22,11 +22,11 @@ class PrayerTimeScreen extends StatelessWidget {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  PrayerTimeItem(timeName: 'ফজর', time: '05:15 am'),
-                  PrayerTimeItem(timeName: 'যোহর', time: '05:15 pm'),
-                  PrayerTimeItem(timeName: 'আসর', time: '05:15 pm'),
-                  PrayerTimeItem(timeName: 'মাগরিব', time: '05:15 pm'),
-                  PrayerTimeItem(timeName: 'ঈশা', time: '05:15 pm'),
+                  PrayerTimeItem(timeName: 'ফজর', time: '০৫:১৫ am'),
+                  PrayerTimeItem(timeName: 'যোহর', time: '০৫:১৫ pm'),
+                  PrayerTimeItem(timeName: 'আসর', time: '০৫:১৫ pm'),
+                  PrayerTimeItem(timeName: 'মাগরিব', time: '০৫:১৫ pm'),
+                  PrayerTimeItem(timeName: 'ঈশা', time: '০৫:১৫ pm'),
                 ],
               ),
               const SizedBox(height: 20),
@@ -35,7 +35,7 @@ class PrayerTimeScreen extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 decoration: const BoxDecoration(
-                  color: Colors.black, // Black background for the countdown
+                  color: Color(0xff001a17), // Black background for the countdown
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
                     topRight: Radius.circular(15),
@@ -45,9 +45,9 @@ class PrayerTimeScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                   'পরবর্তী নামাজ 02 ঘন্টা 08 মিনিট',
                   style: TextStyle(
-                    color: Colors.amber, // Amber text color
+                    color: Color(0xffd8aa37), // Amber text color
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -74,9 +74,9 @@ class PrayerTimeItem extends StatelessWidget {
         Text(
           timeName,
           style: const TextStyle(
-            color: Colors.amber,
+            color: Color(0xffd8aa37),
             fontSize: 16,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w400,
           ),
         ),
         const SizedBox(height: 5),
@@ -84,7 +84,8 @@ class PrayerTimeItem extends StatelessWidget {
           time,
           style: const TextStyle(
             color: Colors.white,
-            fontSize: 14,
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
           ),
         ),
       ],
