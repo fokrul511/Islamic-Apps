@@ -31,7 +31,7 @@ class QuranCard extends StatelessWidget {
             children: [
               Icon(
                 iconData,
-                color: Color(0xff063328),
+                color: const Color(0xff063328),
                 size: 28,
               ),
               const SizedBox(

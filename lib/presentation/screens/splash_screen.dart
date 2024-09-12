@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/presentation/screens/home_screen.dart';
+import 'package:untitled/presentation/utility/apps_colors.dart';
+import 'package:untitled/presentation/utility/assets_path.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -14,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => HomeScreen(),
+        builder: (context) => const HomeScreen(),
       ),
     );
   }
@@ -27,9 +29,32 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: CircularProgressIndicator(),
+    return const Scaffold(
+      backgroundColor: AppColors.primaryColor,
+      body: Column(
+        children: [
+          Spacer(
+            flex: 5,
+          ),
+          Center(
+            child: Image(
+              image: AssetImage(AssetsPath.logo),
+              width: 250,
+            ),
+          ),
+          Spacer(
+            flex: 5,
+          ),
+          // Center(
+          //   child: CircularProgressIndicator(
+          //     color: Colors.white,
+          //     // backgroundColor: AppColors.primaryColor,
+          //   ),
+          // ),
+          // Spacer(
+          //   flex: 1,
+          // ),
+        ],
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:untitled/presentation/screens/islamic_home_page.dart';
+import 'package:untitled/presentation/screens/under_developemt_screen.dart';
 import 'package:untitled/presentation/utility/apps_colors.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,10 +16,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _page = [
     const IslamicHomePage(),
-    const Placeholder(),
-    const Placeholder(),
-    const Placeholder(),
-    const Placeholder(),
+    const UnderDevelopment(),
+    const UnderDevelopment(),
+    const UnderDevelopment(),
+    const UnderDevelopment(),
+
   ];
 
   @override
