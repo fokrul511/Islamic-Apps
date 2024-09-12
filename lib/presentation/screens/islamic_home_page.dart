@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/data/quran_data_list.dart';
-import 'package:untitled/presentation/screens/temporary_screen.dart';
+import 'package:untitled/presentation/screens/under_developemt_screen.dart';
 import 'package:untitled/presentation/widgets/image_frame.dart';
 import 'package:untitled/presentation/widgets/prayer_time.dart';
 import 'package:untitled/presentation/widgets/quran_card_widgets.dart';
@@ -74,7 +74,7 @@ class _IslamicHomePageState extends State<IslamicHomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => TestScreen(
+                          builder: (context) => UnderDevelopment(
                               title:
                                   quranItems[index1].cardItems[index2].title),
                         ),
